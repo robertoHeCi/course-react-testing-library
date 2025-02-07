@@ -16,6 +16,7 @@ function UserForm({ onUserAdd }) {
         <label htmlFor="name">Name</label>
         <input 
           id="name"
+          data-testid="name-input"
           value={name} 
           onChange={(e) => setName(e.target.value)} 
         />
@@ -24,6 +25,7 @@ function UserForm({ onUserAdd }) {
         <label htmlFor="email">Email</label>
         <input 
           id="email"
+          data-testid="email-input"
           value={email} 
           onChange={(e) => setEmail(e.target.value)} 
         />
